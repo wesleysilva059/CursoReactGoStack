@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Exercicio 1</title>
+</head>
+<body>
+
+<script>
+   function pares(x,y){
+      if(x < y){
+         var num_inicial = x;
+         var num_final = y;
+      } else if(x > y){
+         var num_inicial = y;
+         var num_final = x;
+      } else {
+         console.log("Os numeros são iguais.");
+      }
+      console.log(num_inicial, num_final);
+      var pares = [];
+      for( var cont = num_inicial; cont <= num_final; cont++){
+         if((cont % 2) == 0){
+            pares.push(cont);
+         }      
+      }
+      return pares;
+   }
+   var par = pares(32, 321);
+   console.log(par);
+</script>
+   
+</body>
+</html>
